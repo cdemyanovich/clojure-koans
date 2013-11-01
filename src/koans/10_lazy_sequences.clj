@@ -22,4 +22,4 @@
 
   "Iteration can be used for repetition"
   (= (repeat 100 :foo)
-     (take 100 (iterate ___ :foo))))
+     (take 100 (iterate (fn [x] x) :foo))))
